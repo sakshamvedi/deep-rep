@@ -13,14 +13,9 @@ function heera()
 {
     var today = new Date();
 var dd = String(today.getDate()).padStart(2, '0')
-    if(dd<=30)
-{
-    dd = 30-dd;
-    newtime(dd+23);
-}
-else{
-    newtime(dd-23);
-}
+
+    newtime(23-dd);
+
 }
 
   return (
